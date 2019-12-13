@@ -80,6 +80,9 @@
 </script>
 
 <style scoped="scoped">
+  .van-nav-bar{
+    min-width: 334px;
+  }
   .van-popup{
     height: 100%;
     width: 45%;

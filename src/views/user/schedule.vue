@@ -1,6 +1,5 @@
 <template>
   <div class="content">
-
     <van-pull-refresh v-model="isLoading" @refresh="onRefresh">
       <van-panel>
         <van-panel v-for="(item,index) in values" :key="index" :title="item.building+' '+item.room" :desc="'规模 '+item.size+'人'"
@@ -91,13 +90,17 @@
   .content {
     width: 100%;
     height: 100%;
+    min-width: 350px;
   }
-
+.van-pull-refresh{
+  min-width: 350px;
+}
   .van-popup {
     width: 100%;
     height: 50%;
     padding-top: 40px;
     padding-bottom: 20px;
+    min-width: 350px;
   }
 
 

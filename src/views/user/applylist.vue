@@ -57,7 +57,10 @@
   }
 </script>
 
-<style>
+<style >
+  .van-pull-refresh{
+    min-width: 350px;
+  }
   .van-cell:not(:last-child)::after {
     border-bottom: none;
   }

@@ -5,9 +5,9 @@
       <van-field left-icon="shop-o" label="会议室" :value="meetingRoom" @click="showPop('meetingRoom')" placeholder="请选择"></van-field>
       <van-field left-icon="notes-o" clearable label="占用日期" :value="date" @click="showPop('date')" placeholder="请选择"></van-field>
 
-      <van-field left-icon="play-circle-o" v-if="date != ''" disabled label="开始时间" @click="showPop('startTime')" :value="startTime"
+      <van-field left-icon="play-circle-o" v-if="date != ''"  label="开始时间" @click="showPop('startTime')" :value="startTime"
         placeholder="请选择"></van-field>
-      <van-field left-icon="pause-circle-o" v-if="endTimeShow" disabled label="结束时间" @click="showPop('endTime')" :value="endTime"
+      <van-field left-icon="pause-circle-o" v-if="endTimeShow"  label="结束时间" @click="showPop('endTime')" :value="endTime"
         placeholder="请选择"></van-field>
 
       <van-field left-icon="friends-o" v-model="meetingSize" clearable type="number" label="人数" placeholder="请输入人数"
@@ -158,9 +158,10 @@
 <style scoped="scoped">
   .container {
     font-weight: 500;
-    /* margin: 10px; */
   }
-
+.van-cell-group,.van-popup{
+  min-width: 350px;
+}
   .van-cell:not(:last-child)::after {
     border-bottom: 0;
   }
